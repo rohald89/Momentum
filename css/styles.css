@@ -13,7 +13,7 @@ header {
   background: linear-gradient(rgba(23, 26, 66, 0.4), rgba(23, 26, 66, 0.4)),
     url("../images/bg.jpg") center;
   background-size: cover;
-  /* background-color: darkblue; */
+  background-color: darkblue;
   width: 100%;
   height: 300px;
   color: white;
@@ -21,7 +21,7 @@ header {
 }
 
 header nav {
-  padding: 20px 100px;
+  padding: 20px;
 }
 
 header .title {
@@ -33,18 +33,19 @@ header .title {
 }
 
 header h1 {
-  font-size: 3.3rem;
+  font-size: 2rem;
 }
 
 header h2 {
-  font-size: 2.3rem;
+  font-size: 1.3rem;
+  text-align: center;
   font-weight: 100;
   font-style: italic;
 }
 
 header ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 header li {
@@ -59,7 +60,7 @@ header a {
 }
 
 main {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   color: #484d57;
 }
@@ -78,7 +79,7 @@ main h3 {
 }
 
 form {
-  width: 70%;
+  width: 100%;
   margin: 50px auto;
   background: white;
   border-radius: 5px;
@@ -115,4 +116,19 @@ legend button {
   color: white;
   background-color: #6b88f0;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  header nav {
+    padding-right: 100px;
+  }
+  header ul {
+    justify-content: flex-end;
+  }
+  main {
+    width: 60%;
+  }
+  form {
+    width: 70%;
+  }
 }
